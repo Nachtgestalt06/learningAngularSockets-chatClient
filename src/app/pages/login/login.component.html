@@ -1,0 +1,17 @@
+<div class="row justify-content-center">
+  <div class="col-9">
+    <form class="p-4" (ngSubmit)="ingresar()">
+      <input type="text"
+             class="form-control"
+             [(ngModel)]="nombre"
+             name="nombre"
+             placeholder="Nombre de usuario"
+             autofocus
+      >
+      <button [disabled]="nombre.trim().length === 0"
+              class="btn btn-primary btn-block mt-2">
+        Ingresar
+      </button>
+    </form>
+  </div>
+</div>
